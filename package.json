@@ -6,7 +6,7 @@
   "description": "A budgeting app",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run dist",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
