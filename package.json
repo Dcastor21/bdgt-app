@@ -2,11 +2,11 @@
   "name": "budgeting-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dcastor21.github.io/bdgt-app",
+  "homepage": "https://dcastor21.github.io/bdgt-app/",
   "description": "A budgeting app",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run dist",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
