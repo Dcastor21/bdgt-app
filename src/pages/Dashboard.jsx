@@ -4,8 +4,8 @@ import { useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 
 // components
-import Intro from "../components/Intro";
-import AddBudgetForm from "../components/AddBudgetForm";
+import Intro from "../Components/Intro";
+import AddBudgetForm from "../Components/AddBudgetForm";
 
 //  helper functions
 import { createBudget, fetchData } from "../helpers";
