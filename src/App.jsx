@@ -16,7 +16,7 @@ import Error from "./pages/Error";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/bdgt-app/",
     element: <Main />,
     loader: mainLoader,
     errorElement: <Error />,
