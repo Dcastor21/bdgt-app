@@ -16,7 +16,7 @@ const Error = () => {
           <ArrowUturnLeftIcon width={20} />
           <span>Go Back</span>
         </button>
-        <Link to="/" className="btn btn--dark">
+        <Link to="/bdgt-app/" className="btn btn--dark">
           <HomeIcon width={20} />
           <span>Go home</span>
         </Link>
