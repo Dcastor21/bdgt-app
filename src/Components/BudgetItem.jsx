@@ -1,7 +1,7 @@
 import {
   calculateSpentByBudget,
   formatCurrency,
-  formatPrecentage,
+  formatPercentage,
 } from "../helpers";
 
 const BudgetItem = ({ budget }) => {
@@ -19,7 +19,7 @@ const BudgetItem = ({ budget }) => {
         <p>{formatCurrency(amount)} Budgeted</p>
       </div>
       <progress max={amount} value={spent}>
-        {formatPrecentage(spent / amount)}
+        {formatPercentage(spent / amount)}
       </progress>
       <div className="progress-text">
         <small>{formatCurrency(spent)} spent</small>
