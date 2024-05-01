@@ -1,4 +1,4 @@
-import ExpenseItem from "./ExpenseItem";
+import ExpenseItem from "./ExspenseItem";
 
 const Table = ({ expenses }) => {
   return (
