@@ -18,7 +18,7 @@ export async function budgetLoader({ params }) {
     category: "budgets",
     key: "id",
     value: params.id,
-  })[0];
+  });
 
   const expenses = await getAllMatchingItems({
     category: "expenses",
@@ -78,7 +78,7 @@ const BudgetPage = () => {
         <span className="accent">{budget.name}</span> Overview
       </h1>
       <div className="flex-lg">
-        <BudgetItem budget={budget} showDelete={true} />
+        <BudgetItem budget={budget} />
         <AddExpenseForm budgets={[budget]} />
       </div>
       {expenses && expenses.length > 0 && (
