@@ -5,21 +5,20 @@ import { useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 
 // components
-import AddExpenseForm from "../Components/AddExpenseForm";
-import BudgetItem from "../Components/BudgetItem";
-import Table from "../Components/Table";
+import AddExpenseForm from "../components/AddExpenseForm";
+import BudgetItem from "../components/BudgetItem";
+import Table from "../components/Table";
 
 // helpers
 import { createExpense, deleteItem, getAllMatchingItems } from "../helpers";
 
 // loader
-// eslint-disable-next-line react-refresh/only-export-components
 export async function budgetLoader({ params }) {
   const budget = await getAllMatchingItems({
     category: "budgets",
     key: "id",
     value: params.id,
-  });
+  })[0];
 
   const expenses = await getAllMatchingItems({
     category: "expenses",
@@ -35,7 +34,6 @@ export async function budgetLoader({ params }) {
 }
 
 // action
-// eslint-disable-next-line react-refresh/only-export-components
 export async function budgetAction({ request }) {
   const data = await request.formData();
   const { _action, ...values } = Object.fromEntries(data);
@@ -80,7 +78,7 @@ const BudgetPage = () => {
         <span className="accent">{budget.name}</span> Overview
       </h1>
       <div className="flex-lg">
-        <BudgetItem budget={budget} />
+        <BudgetItem budget={budget} showDelete={true} />
         <AddExpenseForm budgets={[budget]} />
       </div>
       {expenses && expenses.length > 0 && (

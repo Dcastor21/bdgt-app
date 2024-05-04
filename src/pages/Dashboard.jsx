@@ -4,11 +4,11 @@ import { Link, useLoaderData } from "react-router-dom";
 import { toast } from "react-toastify";
 
 // components
-import Intro from "../Components/Intro";
-import AddBudgetForm from "../Components/AddBudgetForm";
-import AddExpenseForm from "../Components/AddExpenseForm";
-import BudgetItem from "../Components/BudgetItem";
-import Table from "../Components/Table";
+import Intro from "../components/Intro";
+import AddBudgetForm from "../components/AddBudgetForm";
+import AddExpenseForm from "../components/AddExpenseForm";
+import BudgetItem from "../components/BudgetItem";
+import Table from "../components/Table";
 
 //  helper functions
 import {
