@@ -33,9 +33,8 @@ const router = createBrowserRouter([
         action: dashboardAction,
         errorElement: <Error />,
       },
-
       {
-        path: "budget/:id",
+        path: "/bdgt-app/budget/:id",
         element: <BudgetPage />,
         loader: budgetLoader,
         action: budgetAction,

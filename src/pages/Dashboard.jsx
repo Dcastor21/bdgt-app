@@ -72,7 +72,7 @@ export async function dashboardAction({ request }) {
         key: "expenses",
         id: values.expenseId,
       });
-      return toast.success(`Expense deleted!`);
+      return toast.success("Expense deleted!");
     } catch (e) {
       throw new Error("There was a problem deleting your expense.");
     }
@@ -111,7 +111,7 @@ const Dashboard = () => {
                         .slice(0, 8)}
                     />
                     {expenses.length > 8 && (
-                      <Link to="/expenses" className="btn btn--dark">
+                      <Link to="/bdgt-app/expenses" className="btn btn--dark">
                         View all expenses
                       </Link>
                     )}

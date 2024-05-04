@@ -13,6 +13,7 @@ import Table from "../Components/Table";
 import { createExpense, deleteItem, getAllMatchingItems } from "../helpers";
 
 // loader
+// eslint-disable-next-line react-refresh/only-export-components
 export async function budgetLoader({ params }) {
   const budget = await getAllMatchingItems({
     category: "budgets",
@@ -34,6 +35,7 @@ export async function budgetLoader({ params }) {
 }
 
 // action
+// eslint-disable-next-line react-refresh/only-export-components
 export async function budgetAction({ request }) {
   const data = await request.formData();
   const { _action, ...values } = Object.fromEntries(data);
